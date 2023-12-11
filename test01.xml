@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AutoFramework01" verbose="1">
+    <test thread-count="5" name="ChromeTest">
+        <parameter name="browserType" value="chrome" />
+<!--        <parameter name="keyss" value="Cắt Đôi Mối Tình" />-->
+        <parameter name="appURL" value="https://rise.fairsketch.com" />
+        <classes >
+            <class name="thaotester.Testcases.TC01_TH_Client_Detail" />
+            <class name="thaotester.Testcases.TC02_TH_Client_Contacts" />
+            <class name="thaotester.Testcases.TC03_BT_TaskList" />
+            <class name="thaotester.Testcases.TC04_BT_AddTask" />
+        </classes>
+    </test>
+</suite>
